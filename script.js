@@ -1,12 +1,10 @@
 let playerScore = 0, computerScore = 0, round = 0
-const choices = [
-    'Rock', 
-    'Paper',
-    'Scissors'
-]
+const choices = ['Rock', 'Paper', 'Scissors']
+
 function getComputerChoice() {
     return choices[Math.floor(Math.random() * choices.length)]
 }
+
 function playRound(computerSelection, playerSelection) {
     if(computerSelection === playerSelection) {
         console.log('Its a draw')
@@ -23,10 +21,9 @@ function playRound(computerSelection, playerSelection) {
         console.log(`You win, ${playerSelection} beat ${computerSelection}`)
         playerScore++
     }
-    console.log(playerScore)
-    console.log(computerScore)
+    console.log(`Player Score: ${playerScore}`)
+    console.log(`computer Score: ${computerScore}`)
 }
-
 
 function game() {
     for(i = 0; i < 5; i++) {
