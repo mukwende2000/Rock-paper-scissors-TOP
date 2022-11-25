@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
     <title>Rock Paper Scissors</title>
 </head>
 <body>
@@ -18,13 +17,23 @@
 
         
         <div class="gameplay">
-            <img class="rock" src="rock.png">
-            <img class="paper" src="paper.png">
-            <img class="scissors" src="scissors.png">
+            <img src="rock.png">
+            <img src="paper.png">
+            <img src="scissors.png">
         </div>
         
         <div class="text-result">Try to beat the computer</div>
-        <div class="round-container">Round <span class="round">1</span></div>
+        <div class="visual-result">
+            <div class="p1r">
+                <img src="rock.png">
+                <p>Player 1</p>
+            </div>
+            <div class="p2r">
+                <img src="rock.png">
+                <p>Player 2</p>
+            </div>
+        </div>
   </div>    
+  <script src="app.js"></script>
 </body>
 </html>
